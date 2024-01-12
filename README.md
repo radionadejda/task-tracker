@@ -1,1 +1,1 @@
-# this is a small tracking / to-do list app
+# this is a small task tracking / to-do list app
