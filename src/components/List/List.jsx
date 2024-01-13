@@ -45,7 +45,7 @@ export const List = () => {
                 addItem={addItem}
             />
             {items.length === 0 ? (
-                <p className={styles.congrats}>Yay! No more work for today!</p>
+                <p className={styles.congrats}>Yay! No more work for today! (yet)</p>
             ) : (
                 <ul className={styles.list}>
                     {items.map((item) => (
