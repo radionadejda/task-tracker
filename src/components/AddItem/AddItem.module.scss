@@ -1,0 +1,25 @@
+@import '../../styles/vars';
+
+.form {
+    margin: 1%;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    width: 100%;
+    padding: 2% 6%;
+    background-color: rgba($accent1, 0.5);
+    margin: 0 5%;
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    &:focus {
+        box-shadow: 0 0 2px 2px rgba($accent3, 0.9);
+    }
+}
+
+.addButton {
+    @include button;
+}

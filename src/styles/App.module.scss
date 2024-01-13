@@ -1,0 +1,14 @@
+@import './vars';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+}
+
+.App {
+    text-align: center;
+    background: linear-gradient(325deg, rgba($accent2, 1) 0%, rgba($accent1, 1) 100%);
+    min-height: 100vh;
+}

@@ -1,0 +1,57 @@
+$bg: #f0dfd9;
+$accent2: #0b001c;
+$accent1: #973dff;
+$accent3: rgb(250, 128, 114);
+$shadow: #e9cfff;
+$text: #000000;
+
+$mobile: 576px;
+$medium: 768px;
+$large: 992px;
+$extralarge: 1200px;
+
+$header-height: 15vh;
+$footer-height: 15vh;
+$main-height: 70vh;
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+$font: 'Roboto';
+
+@mixin main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 5%;
+    min-height: $main-height;
+}
+
+@mixin button {
+    font-size: 1rem;
+    padding: 2% 6%;
+    margin: 0 1%;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: $accent1;
+    color: $text;
+    min-width: fit-content;
+    text-wrap: nowrap;
+    &:hover,
+    &:active,
+    &:focus {
+        transition: 0.5s;
+    }
+    &:hover {
+        background-color: $accent3;
+    }
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 2px 2px rgba($accent3, 0.9) inset;
+    }
+    &:active {
+        background-color: $accent3;
+    }
+}

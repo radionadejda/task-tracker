@@ -1,0 +1,38 @@
+@import '../../styles/vars';
+
+.item {
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr;
+    width: 70vw;
+    margin: 1% auto;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.label {
+    font-size: large;
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+}
+
+.checkbox {
+    appearance: none;
+    width: 1.5rem;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+    background-color: $accent1;
+    border: 1px solid $accent2;
+    border-radius: 3%;
+    margin: 0 2%;
+    &:checked {
+        background-color: $accent3;
+    }
+}
+
+.deleteButton {
+    @include button;
+    padding: 1%;
+}

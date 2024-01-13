@@ -1,0 +1,22 @@
+@import '../../styles/vars';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba($accent1, 0.2);
+    padding: 1% 5%;
+    color: $text;
+    height: $header-height;
+}
+
+.title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    min-width: fit-content;
+    color: $text;
+    &:hover {
+        transition: all 0.3s ease;
+        color: $accent2;
+    }
+}

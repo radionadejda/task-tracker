@@ -1,0 +1,17 @@
+@import '../../styles/vars';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($accent2, 0.1);
+    color: $text;
+    height: $footer-height;
+}
+
+.footer__link {
+    font-family: $font;
+    text-decoration-color: $accent1;
+    color: $text;
+}
